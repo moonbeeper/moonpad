@@ -1,0 +1,169 @@
+(footprint "RS45111A900F"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Alps Super Slide (Standard Type) single-gang slide potentiometer 45.0mm")
+	(tags "Alps single-gang slide potentiometer 45.0mm")
+	(property "Reference" "REF**"
+		(at 0 -5.88 0)
+		(layer "F.SilkS")
+		(uuid "001e53a6-779b-41e3-abd0-3da8aef69199")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "RS45111A900F"
+		(at 0 5.88 0)
+		(layer "F.Fab")
+		(uuid "6af66f07-e9a9-452b-a576-d46b05846b26")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://tech.alpsalpine.com/e/products/detail/RS45111A900F"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "394637bf-a619-4d4b-8a16-5e488e8b6705")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Super Slide (Standard Type) RS**1 Series"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4326ca4e-5a68-4b77-a3cd-3a15d84e6195")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -30 -4)
+		(end -30 4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9bfc8081-21fe-417d-b0d6-cbc0bb203840")
+	)
+	(fp_line
+		(start -30 4)
+		(end 30 4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1f32f927-7b5d-4fcc-9627-11b08b49f729")
+	)
+	(fp_line
+		(start 30 -4)
+		(end -30 -4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ff45f81d-24a0-4b7c-b507-40fe6ee2bc7b")
+	)
+	(fp_line
+		(start 30 4)
+		(end 30 -4)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5cdcc98c-e7be-4678-82ea-0dca9a5fcef3")
+	)
+	(fp_circle
+		(center -30 4)
+		(end -29.97 4)
+		(stroke
+			(width 0.06)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a4f60d4d-49f8-4f98-a50c-1bf3f6b0751e")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "bbfe2870-523d-4fc2-a0b5-4ee662890593")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -25 1.88)
+		(size 2.5 2.5)
+		(drill 1.500022)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3328da77-c873-42b9-9f0b-86a2b30e37cf")
+	)
+	(pad "2" thru_hole circle
+		(at -25 -1.88)
+		(size 2.5 2.5)
+		(drill 1.500022)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e76a359a-4ae6-4a70-b94b-62e8a3b361f1")
+	)
+	(pad "3" thru_hole circle
+		(at 25 1.88)
+		(size 2.5 2.5)
+		(drill 1.500022)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3a3159bc-7aff-4787-84cb-1d74128829d2")
+	)
+	(pad "MP" thru_hole circle
+		(at -17.5 0)
+		(size 3 3)
+		(drill 2.199996)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "eb9e8872-2ecd-410e-a84e-0d3e819f12ca")
+	)
+	(pad "MP" thru_hole circle
+		(at 15 0)
+		(size 3 3)
+		(drill 2.199996)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4e2be458-835f-4157-a720-ab2b9cf7f822")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/symbols/3dshapes/RS45111A900F.step"
+		(offset
+			(xyz 0 0 7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

@@ -1,0 +1,18 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"C1, C10, C11, C12, C13, C14, C2, C3, C4, C5, C6, C7, C8, C9",0805,14,1uF,C116352
+"D1, D2, D3, D4, D5, D6, D7",D_MiniMELF_Handsoldering,7,1N4148,C68883
+J1,PinHeader_1x03_P2.54mm_Vertical,1,UPDI_Common,
+J2,PinHeader_1x05_P2.54mm_Vertical,1,Right_Connector,
+J3,PinHeader_1x05_P2.54mm_Vertical,1,Bottom_Connector,
+J4,PinHeader_1x05_P2.54mm_Vertical,1,Left_Connector,
+J5,PinHeader_1x05_P2.54mm_Vertical,1,Top_Connector,
+Q1,SOT-23_Handsoldering,1,PMOS,C15127
+"R1, R4",0805,2,10k,C17414
+"R2, R3, R5",0805,3,4.7k,C60816
+"SW1, SW2, SW3",RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles,3,RotaryEncoder_Switch,C202365
+SW4,SW-SMD_MSS12C02LS-HB2.0-1,1,SW_SPDT,C3008584
+U1,SOIC-20W_7.5x12.8mm_P1.27mm,1,ATtiny1616-S,C609652
+U2,TSSOP-16_4.4x5mm_P0.65mm,1,TMUX4052,C7362466
+U3,SOIC-14_3.9x8.7mm_P1.27mm,1,ATtiny414-SS,C1338163
+"U4, U5, U6, U7",VSSOP-8_2.3x2mm_P0.5mm,4,TS5A23166DCUR,C49148
+U8,VSSOP-8_3x3mm_P0.65mm,1,TCA4311ADGKR,C130025
