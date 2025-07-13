@@ -6,7 +6,7 @@ The primary reason for making this project was to just learn how to make PCBs an
 
 ## Images
 
-![Final Macropad Render](.github/images/.woops.png)
+![Final Macropad Render](.github/images/9.woops.png)
 > Macropad
 
 ![Final Knobs Module Render](.github/images/10.png)
