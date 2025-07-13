@@ -272,7 +272,7 @@ I'll compensate it with the following screenshots of the finished product :) (so
 
 ## Finalized 3D models
 
-![Final Macropad Render](.github/images/9.png)
+![Final Macropad Render](.github/images/9.woops.png)
 > Macropad
 
 ![Final Knobs Module Render](.github/images/10.png)
