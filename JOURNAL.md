@@ -308,3 +308,10 @@ Big woops from me. I didn't realize that I had forgotten to remove some of my pl
 I've also moved some of the footprint references (text) to make it prettier in my eyes.
 
 **Total time spent: 20min**
+
+While I was adding the components to the LCSC cart, I had a mini panic when I reached the TMUX4052PWR because it was out of stock. Thank god that they had the TMUX4052PWRQ1 which is the same thing with somehow a cheaper price but with the automotive certification... which is useless for my purposes BUT I don't have to worry about modifying the pcbs to use it.
+Plus, some of the other components where practically running out of stock with only 7 units available. mama mia.
+
+Meanwhile in aliexpress land we are ok, thank god :(.
+
+**Total time spent: 1h**
