@@ -497,7 +497,7 @@
 		(descr "VSSOP, 8 Pin (https://www.jedec.org/standards-documents/docs/mo-187-f), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "VSSOP SO JEDEC-MO-187-AA TI-DGK0008A")
 		(property "Reference" "U8"
-			(at 0 -2.45 0)
+			(at 0 2.65 0)
 			(layer "F.SilkS")
 			(uuid "2680645c-e9fd-46bb-bc23-28a2c31020ce")
 			(effects
@@ -4909,7 +4909,7 @@
 		(descr "SOIC, 14 Pin (JEDEC MS-012AB, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOIC SO")
 		(property "Reference" "U3"
-			(at -1.2375 5.610854 90)
+			(at -2.6375 5.710854 90)
 			(layer "F.SilkS")
 			(uuid "3384de38-f79b-49c6-b963-db4697f41462")
 			(effects
@@ -6797,7 +6797,7 @@
 		(descr "SOT-23, Handsoldering AO3401A")
 		(tags "SOT-23 AO3401A")
 		(property "Reference" "Q1"
-			(at 1.45 -1.58 0)
+			(at 2.05 -2.0625 0)
 			(layer "F.SilkS")
 			(uuid "1f2e35a7-c7b6-4099-99fd-e5e734ae9d19")
 			(effects
@@ -7215,7 +7215,7 @@
 		(descr "TSSOP, 16 Pin (https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TSSOP SO JEDEC-MO-153-AB TI-PW0016A Microchip-ST Toshiba-TSSOP16-P-0044-0.65A NXP-SOT403-1 Infineon-P-TSSOP-16-800")
 		(property "Reference" "U2"
-			(at 2.7 -3.45 0)
+			(at -0.0625 3.65 0)
 			(layer "F.SilkS")
 			(uuid "b8f7a4c5-bc17-43f8-968e-b7c54b881315")
 			(effects
@@ -9241,7 +9241,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C12"
-			(at 0 -1.68 0)
+			(at 0 1.95 0)
 			(layer "F.SilkS")
 			(uuid "e7803d86-28ff-4e14-927e-48910e5a2ac7")
 			(effects

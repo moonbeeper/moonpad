@@ -860,7 +860,7 @@
 		(descr "VSSOP, 8 Pin (https://www.jedec.org/standards-documents/docs/mo-187-f), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "VSSOP SO JEDEC-MO-187-CA TI-DCU0008A")
 		(property "Reference" "U4"
-			(at 0 -1.95 90)
+			(at 0 2.3 90)
 			(layer "F.SilkS")
 			(uuid "880c1163-4e5e-4373-8d39-bd817240033b")
 			(effects
@@ -1257,7 +1257,7 @@
 		(descr "Diode Mini-MELF (SOD-80) Handsoldering")
 		(tags "Diode Mini-MELF (SOD-80) Handsoldering")
 		(property "Reference" "D5"
-			(at 0 -2 0)
+			(at 0 2 0)
 			(layer "F.SilkS")
 			(uuid "4e70910c-8c18-4518-95f7-7ae928ceec11")
 			(effects
@@ -2513,7 +2513,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C8"
-			(at 2.3 0 180)
+			(at -2.7 0 180)
 			(layer "F.SilkS")
 			(uuid "486f29d3-8b79-4f2f-aeab-974e9c380b2b")
 			(effects
@@ -6808,7 +6808,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C6"
-			(at 2.2375 -1.95 0)
+			(at -2.6625 0.05 0)
 			(layer "F.SilkS")
 			(uuid "5b6a4237-2673-453d-817f-7467e2303da5")
 			(effects
@@ -8614,7 +8614,7 @@
 		(descr "VSSOP, 8 Pin (https://www.jedec.org/standards-documents/docs/mo-187-f), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "VSSOP SO JEDEC-MO-187-AA TI-DGK0008A")
 		(property "Reference" "U8"
-			(at 0 2.45 0)
+			(at 0 -2.525 0)
 			(layer "B.SilkS")
 			(uuid "2680645c-e9fd-46bb-bc23-28a2c31020ce")
 			(effects
@@ -9235,7 +9235,7 @@
 		(descr "VSSOP, 8 Pin (https://www.jedec.org/standards-documents/docs/mo-187-f), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "VSSOP SO JEDEC-MO-187-CA TI-DCU0008A")
 		(property "Reference" "U7"
-			(at 0 1.95 90)
+			(at 0 -2.18 90)
 			(layer "B.SilkS")
 			(uuid "f70e9425-e502-447e-bd03-4dca4844ecc1")
 			(effects
@@ -11104,7 +11104,7 @@
 		(descr "SOT-23, Handsoldering AO3401A")
 		(tags "SOT-23 AO3401A")
 		(property "Reference" "Q1"
-			(at 1.45 1.58 0)
+			(at 1.65 1.9625 0)
 			(layer "B.SilkS")
 			(uuid "1f2e35a7-c7b6-4099-99fd-e5e734ae9d19")
 			(effects
@@ -12565,7 +12565,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C3"
-			(at -2.8 0 0)
+			(at 3.2 0 0)
 			(layer "B.SilkS")
 			(uuid "46f130f7-83ee-4acc-9895-7f7fb866ddd0")
 			(effects
@@ -13260,7 +13260,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
-			(at 3.2 0.1 90)
+			(at 0 -2.2 90)
 			(layer "B.SilkS")
 			(uuid "bdfcef8f-fbeb-4a8f-a646-485341eb3778")
 			(effects
@@ -13704,19 +13704,6 @@
 				(bold yes)
 			)
 			(justify bottom)
-		)
-	)
-	(gr_text "cool image here :3"
-		(at 219.685 77.398752 -0)
-		(layer "B.SilkS")
-		(uuid "4853025a-a17f-4bbc-ab45-b00b75b00ec6")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.2)
-				(bold yes)
-			)
-			(justify left bottom mirror)
 		)
 	)
 	(segment

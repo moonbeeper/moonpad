@@ -300,3 +300,11 @@ I've removed the original DSA keycaps and replaced them with a cheaper option as
 **Total time spent: 1h**
 
 Shall I thank the gods of the hackclub's solder workshop for the kickstart it gave me to start my own projects like this. :3
+
+# July 19th
+
+Big woops from me. I didn't realize that I had forgotten to remove some of my placeholder text used for the graphics in the pcbs. Found about it thanks to the preview JLCPCB gives you when uploading gerbers. lol
+
+I've also moved some of the footprint references (text) to make it prettier in my eyes.
+
+**Total time spent: 20min**
