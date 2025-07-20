@@ -315,3 +315,13 @@ Plus, some of the other components where practically running out of stock with o
 Meanwhile in aliexpress land we are ok, thank god :(.
 
 **Total time spent: 1h**
+
+# July 21st
+
+I love aliexpress. I know I didn't write this on the 19th because I thought things would be fast, but I was really wrong haha.
+
+I can just summarize the whole thing as aliexpress saying "haha, you want to register an account and pay for the stuff in your cart? no way! your account is now suspended lol." and then I tried to register a new account and womp womp the same thing happened. Even on my phone... what did I even do lol
+
+At least they didn't charge the card for anything on the shopping cart. :(
+
+I'll have to use my parents account to buy the stuff I need, or else it won't arrive on time.
