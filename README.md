@@ -1,6 +1,9 @@
 # moonpad
 
-It's a modular macropad. Simple as that. You have a screen in the macro pad and 2 modules that can be daisy chained and hot swapped.
+> [!NOTE]
+> This project is still not in a finished state. Its not even built yet!!!
+
+It's a modular macropad. Simple as that. You have an oled screen in the macropad and 2 modules that can be daisy chained and hot swapped. These two modules are the knobs and sliders module as I didn't want to overcomplicate my first project.
 
 The primary reason for making this project was to just learn how to make PCBs and use microcontrollers like the RP2040 and ATTINY. It was a great adventure and I think I learned a lot. I mean, there's sure a lot of room for improvement but I'm happy with the result.
 

@@ -5,7 +5,7 @@ description: "What an original name. A modular macropad. that's it."
 created_at: "2025-06-21"
 ---
 
-**Total time spent: 108h**
+**Total time spent: 109h**
 
 # June 21st: Preliminary BOM and Layout
 
@@ -29,7 +29,6 @@ Right now, I have a preliminary BOM and layout that's a mix of the solder tutori
 ## Schema Layout
 
 ![First Schema Layout](.github/images/1.png)
----
 
 gotta love making something complicated for me after doing a beginner tutorial for the first time.
 
@@ -72,6 +71,8 @@ I also added a i2c buffer chip, the TCA4307, to the modules to compensate with t
 I also got really stuck figuring out how the modules decide which of the 4 SDAs and SCLs to use for their internal multiplexer (for daisy-chaining). Ended up using an analog switch controlled by another ATTINY1616. I didn’t want to make it too complicated.
 
 **Total time spent: 2h**
+
+---
 
 After planning out the way i'll be chaining the modules I swapped all I2C pullups for 1.8k ohm because long distance and the use of i2c fastmode (Before I was going to use the standard mode). Plus, 1.8k ohm is compliant for I2C fast mode at 5V (I might be misunderstanding this, but hey am trying!).
 
@@ -120,6 +121,8 @@ Took a while to start (procrastination lol), but behold: the finalized PCB for t
 
 Oh! And somehow I forgot about adding the mounting holes! At least the majority of the chips and tracks were not routed near the corners of the pcb. It was an easy fix though. The mounting holes are m2 if you were wondering.
 
+![Preliminary Knobs module PCB](.github/images/21.png)
+
 **Total time spent: 9h**
 
 # July 5th
@@ -130,9 +133,16 @@ Because I just want to apparently procrastinate, I'll just search up all the com
 
 **Total time spent: 30min**
 
+---
+
 I don't think is a good idea to have a component is backorder. It's the 1 channel analog switch that I'm using. uhm, I'll just continue using it. I don't know if it is really a bad idea or not. I'll continue putting the LCSC part number in the parts.
 
+![Backordered TS5A23167](.github/images/22.png)
+> The TS5A23167 is backordered. Not great but I don't think I need to worry as I can still buy it.
+
 **Total time spent: 1h**
+
+---
 
 The slider module was pretty easy to route and make. I practically just had the whole thing in already on my mind.
 In the start everything was crammed in the middle. Then I thought "is the footprint right" because the slider I was going to use DID NOT match the one I found in KiCad. In the I used easyeda2kicad to convert the footprint and get a pretty 3d model for it. It will be quite useful when I get into fusion360 making the cases and all of that.
@@ -141,6 +151,8 @@ In the start everything was crammed in the middle. Then I thought "is the footpr
 I also decided to add date, "company" and title to all the schematics of the boards. Makes them pretty.
 
 **Total time spent: 3h**
+
+---
 
 Now I need to decide if I want to make first the firmware for each module and main pcb or make first the cases for the main pcb and then the modules.
 
@@ -153,9 +165,13 @@ I assigned the models to the pcb components so they are visible in the export st
 
 **Total time spent: 2h**
 
+---
+
 For some reason when I was exporting the PCBs for Fusion 360, mr kicad was throwing at me a weird error: "Could not add 3D model to (component ref). OpenCASCADE error: TDocStd_XLinkTool::Copy : not self-contained." The first solution that came to my mind was to simple reexport the 3d models by importing them into fusion and then exporting them from there. And ta-da it worked. Won't question it.
 
 **Total time spent: 20min**
+
+---
 
 With that said I decided to start by making the case for the main pcb. I will be screwed by the bottom to not show any screws. It will be using m2 screws and inserts. And that's it. Time to get into work.
 
@@ -164,6 +180,8 @@ With that said I decided to start by making the case for the main pcb. I will be
 For the love of god I cannot figure out how to make the holding plate of the keys. I spent 2h fighting and searching for tutorials. All of them explain the "why" but not the "how" of positioning. Got mad and decided: no holding plate, just a big rectangle hole.
 
 **Total time spent: 2h**
+
+---
 
 Fusion360 is hard to use as a beginner, I mean am getting better at it but there's that.
 In the end I tried adding the keyswitch plate by following a hybrid of tutorials and my own ideas.
@@ -181,37 +199,60 @@ In reality the main reason to restart the whole case design was that the case wa
 
 # July 9th
 
-Finalized the main module case. Finally. I'm so happy. I'm going to sleep now. yippie.
+Finalized the main module case (the macropad). Finally. I'm so happy. I'm going to sleep now. yippie.
 I mean, it looks good! (in my eyes) The modules would just be a copy paste of the main module with different proportions... and holes positions.
+
+![Preliminary final macropad case](.github/images/16.png)
+
+Look at it! Such a beauty for my first time finishing something in fusion360.
+
 **Total time spent: 6h**
 
 # July 10th
 
-And just like that, I finished all the cases in one day. Now it's time for firmware.
-I was planning to use platform io (arduino) for the modules (main mcu and the helping hand) and use the kmk firmware for the macropad because it seems to be quite easy to modify it to add support for my knobs and sliders. Plus, macropad support lol.
+And just like that, I finished all the cases for the modules in one day. I'll now start with the firmware for all the modules and the macropad which probably will be using circuitpython as I don't have confidence that I'll be able to make it work with something other than the kmk firmware because it seems to be quite easy to modify it to add support for my knobs and sliders.
+
+For the modules I was planning to use platform io (arduino) because python is a little bit too much for the use I would be giving to it with these modules.
+
+Ah, and btw this how the cases ended up looking like:
+
+![Preliminary Knobs module case](.github/images/17.png)
+
+![Preliminary Sliders module case](.github/images/18.png)
+> The first image is the knobs module. The second one is the sliders module.
 
 **Total time spent: 8h**
 
+---
+
 I was looking at the cases with the boards in fusion360 to see if they match as they should. And what would you know, one side of them didn't. The right side (in kicad's pcb editor) header in all pcbs was the wrong way around. Imagine if I submitted this and sent it to the fab with that error. mama mia.
+
+I've made a lil' picture showing the pretty obvious mistake I made.
+
+![Right header wrong way around](.github/images/19.png)
+
+![Right header right way around](.github/images/20.png)
+> The first image is the wrong way around. The second one is the right way around.
 
 And also, remember the chip that was in backlog? Yeah, it is NOT good have something in backlog. I just swapped it with the equivalent chip. The normally open one, the TS5A23166DCUR. Thank god that they have the same pinout or else I would be pulling my hair out of my skull.
 
 **Total time spent: 1h**
 
-# July 10th
+---
 
-Started with the firmwares and finished one already!
-I'll be making first the helping hand (ATTINY414) firmware. Then the knobs, sliders (ATTINY1616s) and finally the main module (RP2040).
-
-1 out of 4 firmwares done. The helping hand firmware was easiest. Just some logic, then deep sleep.
+Just like that I've already finished one of them in not much time. Its the helping hand firmware which probably will be the only easiest part to make of this whole thing. Just some logic, then deep sleep. Not very long or complex.
 
 **Total time spent: 45m**
 
-2 out of the 4 firmwares done. The knobs one was a little hard to make because of the need to make a base class that would be used to setup comms and do base commands like the change address command. The same class and protocol will be used for the sliders.
+---
+
+The knobs one was a little hard to make because of the need to make a base class that would be used to setup the actual comms and do base commands like the change address command that will be used by the macropad when discovering the module. This same class/protocol will be also used for the sliders.
 
 **Total time spent: 3h**
 
-3 out of the 4 firmwares done. The sliders one was quite easy to make. Just read a analog value and send it through comms. Pretty nice.
+---
+
+The sliders one was quite easy to make. I just needed to read a analog value given by the slider 10k potentiometer and send it through comms. Pretty nice.
 
 **Total time spent: 1h**
 
@@ -241,6 +282,8 @@ The preparations include:
 - that's it.
 
 **Total time spent: 1h**
+
+---
 
 One thing that I sadly failed to do is to make screenshots of the progress to add here. I just added that mere screenshot at the start and that's it lol.
 I'll compensate it with the following screenshots of the finished product :) (sorry)
@@ -283,6 +326,8 @@ I'll compensate it with the following screenshots of the finished product :) (so
 
 **Total time spent: 20min**
 
+---
+
 Seems like have discovered why fusion360 was asking for a "Version description" each time I was saving the project. Its for version control... I'll add screenshots of the failed try to make the Macropad in here to not modify the journal.
 
 ![Failed old Macropad](.github/images/12.png)
@@ -293,11 +338,15 @@ Seems like have discovered why fusion360 was asking for a "Version description" 
 
 **Total time spent: 10min**
 
+---
+
 Woaaah. I forgot about one thing!! THE BOM!! Its in the BOM.md file, obviously. This hecking thing is pricier than I though. If I get approved I'lk be possibly over the budget. mama mia.
 
 I've removed the original DSA keycaps and replaced them with a cheaper option as I was just getting a whole keyboard of keycaps when I won't even use them in the macropad. It might even be risky as I'll be using sellers that aren't very well known.
 
 **Total time spent: 1h**
+
+---
 
 Shall I thank the gods of the hackclub's solder workshop for the kickstart it gave me to start my own projects like this. :3
 
@@ -309,8 +358,13 @@ I've also moved some of the footprint references (text) to make it prettier in m
 
 **Total time spent: 20min**
 
+---
+
 While I was adding the components to the LCSC cart, I had a mini panic when I reached the TMUX4052PWR because it was out of stock. Thank god that they had the TMUX4052PWRQ1 which is the same thing with somehow a cheaper price but with the automotive certification... which is useless for my purposes BUT I don't have to worry about modifying the pcbs to use it.
 Plus, some of the other components where practically running out of stock with only 7 units available. mama mia.
+
+![TMUX4052PWR not available](.github/images/15.png)
+> How the hell did this happen in the span of just only days?
 
 Meanwhile in aliexpress land we are ok, thank god :(.
 
@@ -320,8 +374,19 @@ Meanwhile in aliexpress land we are ok, thank god :(.
 
 I love aliexpress. I know I didn't write this on the 19th because I thought things would be fast, but I was really wrong haha.
 
-I can just summarize the whole thing as aliexpress saying "haha, you want to register an account and pay for the stuff in your cart? no way! your account is now suspended lol." and then I tried to register a new account and womp womp the same thing happened. Even on my phone... what did I even do lol
+I can just summarize the whole thing as aliexpress saying "haha, you want to register an account and pay for the stuff in your cart? no way! your account is now suspended lol." and then I tried to register a new account and womp womp the same thing happened. Even on my phone... what did I even do lol.
+
+![suspended account dialog](.github/images/14.png)
+> The screenshot is in spanish as its my native language. But you get the idea.
 
 At least they didn't charge the card for anything on the shopping cart. :(
 
 I'll have to use my parents account to buy the stuff I need, or else it won't arrive on time.
+
+# July 28th
+
+I have since ordered all the components and have the cases ready to be sent right to my home. And as great plus, I ended up with a great great margin of money in the card they gave me.
+
+Today, after ending work with my [echowawa](https://highway.hackclub.com/projects/moonbeeper/echowawa) project and getting it accepted. I started *enhancing* this journal to make it lil' better than before... i hope that's ok
+
+**Total time spent: 1h**
