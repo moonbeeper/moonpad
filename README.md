@@ -1,7 +1,8 @@
 # moonpad
 
 > [!NOTE]
-> This project is still not in a finished state. Its not even built yet!!!
+> This project is still not in a finished state. It does not work.
+> This project comes from [Highway To Undercity](https://highway.hackclub.com/projects/moonbeeper/moonpad)
 
 It's a modular macropad. Simple as that. You have an oled screen in the macropad and 2 modules that can be daisy chained and hot swapped. These two modules are the knobs and sliders module as I didn't want to overcomplicate my first project.
 
