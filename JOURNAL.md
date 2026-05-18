@@ -28,3 +28,30 @@ As for final words, gosh how I'd liked for past me to make a thousand different 
 ![drawn nRF comparison table](.github/images/1.png)
 
 **Total time spent: 4 hours**
+
+# May 18: Baby steps of the first schematic
+
+ah, it's been a long time. How have you been kicad? still crap in wayland? yes you are still crap in wayland... oh, hello again bimbows!
+
+While it should be reallllllly easy to follow the reference circuits, I sometimes get into a... uhh a loop? 
+Because, instead of choosing one of the provided configurations from the nRF52840, I tried to research and find other schematics that used it WITH a pmic like the npm1300. And I really did not find much, just the XIAO devboards that did not adhere to the provided configurations.
+
+And that's where my brain imploded a bit, because of it not using one of the provided configurations by nRF I started to search why is it like that and if I should copy it (because it has been proven to work) and blah blah blah. In the end I did just copy the stuff and that's it.
+
+It uses the DCDCEN1 and not the DCDCEN0. What's DCDCEN? Its to enable the DC/DC regulators to have, overall, better efficiency and less power consumption than using the, by default, LDO regulators that do not need anything on the DCC or DCCH (H of High Voltage 5v) pins. To be able to use them I need to HAVE a LC filter or else pee pee poo poo no worky, and because I am using 3v3 for powering the mcu I am not using the DCCH and only the DCC. Its just for the radio stuff (eg. Bluetooth), and uhh indeed I did just copy the XIAO schematic but at least I know why I should copy it instead of just copying it blindly.
+
+![beautiful shwoing of LDO schematic and the DCC schematic of the XIAO](.github/images/3.png)
+
+i don't really draw well but i try hahahahh :)
+
+Meanwhile on the npm1300 land, I just "followed the reference circuits" and that's it. I mean I did get a bit confused at how I can set an interrupt (USB disconnected (vbus) and SPHOLD (wake from sleep button)) to a GPIO of the pmic and finally found the solution on the nRF sdk. They, quite literally, had that as an example of usage with the npm1300. pretty cool not gonna lie. I won't be using any of the leds (drivers) as I plan to actually use the oled screen for showing stuff (who would have thought that) and then sleep to save battery (woowie).
+
+... I do be starting to think that I do need to use lapse because I do be derailing from making the schematic to researching other stuff and bleh. but i do be using a stopwatch for these things.
+
+OKAY, here's a baby baby baby schematic of my macropad that doesn't even have the macropad part and just has the nRF and PMIC in it with some text pointing to the caps of the vdd because stupid me couldnt count and got confused in that part somehow.
+
+![baby baby baby baby schematic of the macropad](.github/images/2.png)
+
+now gotta do the key matrix and some easy quick things like adding an external flash and the canbus stuff and yay. cleanup and then suffer making the pcb... and also think how the heck will I get a J-Link thingy to program these stuffs
+
+**Total time spent: 1.7 hours**
