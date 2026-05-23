@@ -58,7 +58,7 @@ now gotta do the key matrix and some easy quick things like adding an external f
 
 # May 23: About time for the keyboard matrix and the first finished schematic
 
-wow.
+wow. i hope forge gets the git branch feature. like, my beautiful images!
 
 I added the typical USB esd protection to not fry alive the nrf52840 thanks to mr usb c shenanigans. look at it next to its partner, the big usb c connector. its so cute and tiny and cheap and it will protect my precious nrf from the evil usb spikes and the spell named electrostationic dischargium.
 
