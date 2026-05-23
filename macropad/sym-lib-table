@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "meow") (type "KiCad") (uri "C:/Users/toast/Documents/Lab/Projects/moonpad/Macropad/symbols/meow.kicad_sym") (options "") (descr ""))
+)

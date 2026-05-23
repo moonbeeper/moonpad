@@ -55,3 +55,31 @@ OKAY, here's a baby baby baby schematic of my macropad that doesn't even have th
 now gotta do the key matrix and some easy quick things like adding an external flash and the canbus stuff and yay. cleanup and then suffer making the pcb... and also think how the heck will I get a J-Link thingy to program these stuffs
 
 **Total time spent: 1.7 hours**
+
+# May 23: About time for the keyboard matrix and the first finished schematic
+
+wow.
+
+I added the typical USB esd protection to not fry alive the nrf52840 thanks to mr usb c shenanigans. look at it next to its partner, the big usb c connector. its so cute and tiny and cheap and it will protect my precious nrf from the evil usb spikes and the spell named electrostationic dischargium.
+
+![tiny usb esd protector](.github/images/4.png)
+
+okay, now WHY did I add the additional buck feeding from the VSYS of my PMIC!? first TI made a cool buck(-boost) that has a soft-start (to not pull too much and make the pmic go crazy) and other features that i wont even use. I practically chose it for its 2MHz switching frequency to try to mimic the PMIC (it doesnt even reach the 3.6MHz switching it has) with its hysteretic mode (also called hysteric mode. means lower than 2Mhz) that automagically switches to PWM mode (max frequency in high workloads), and uhh to also lie to my self that if I hadnt chosen the 2MHz one it would make the bluetooth radio go pee pee poo poo. AND AND also because the VSYS line might drop below the 3v3 that I use for everything (drops higher voltages to 3v3 and boosts to 3v3 when vsys is lower than the target (3v3)) or else everything will be sad and tell me "hey, i am going to brown out and die... heck you".
+
+Its ONLY job is to give food to my canbus controller, transceiver and the modules... those pesky power hungry canbus chips (the modules themselves don't really eat that much). Even though we can't really reach its max of 1.5A because of limits on the vsys. we wouldnt really reach it anyways
+
+Plus another reason is because the BUCKS inside the pmic can't really provide more than 200mA and... that's not enough for mr canbus guys...... If this board catches fire and implodes (not explodes) i am going to cry and blame the world and not my brain for the wrong choices.
+
+![the feeder named buck-boost for canbus and co](.github/images/5.png)
+
+VISUAL DEPARTMENT INCOMING (without image). its just a nice!view because of, again, the beautiful power savings that won't be really noticeable and the fact that it doesnt have a backlight... but its cool and that's it. I mean I can decide to swap it with a normal SSD1306 oled because the pin configuration stays practically the same (if I still use SPI!)
+
+... the nice!view isnt really that cheap. god now I am starting to think that I am actually taking the nice!view for the sake of having it bruh.
+
+LASTLY, the keyboard matrix. I am not going to talk about it because its quite literally just a matrix with diodes and stuff. I mean, if you have ever seen a keyboard schematic, you know how it works. And also you have the uhmm button and spdt switch that will control the bluetooth stuff. I plan to do the pairing and other stuff by using the knob with the screen... lets not forget about the connectors that are just the 3v3 and canbus lines.
+
+![filler named keyboard matrix and buttton](.github/images/6.png)
+
+WAIT WAIT WAIT, I also saw (snooping) in the slack channel of forge someone talking about needing to put a cap and a resistor in parallel between the usb shield and the ground plane to reduce the risk of a mega shock killing the macropad (and maybe the user idk)... my case is made out of plastic, there's no exposed metal frame (like aluminum or something) to touch. I don't need that. If a mega shock somehow finds its way inside, its just going to pass through the ground planes straight to narnia anyway.
+
+**Total time spent: 3.5 hours**
