@@ -83,3 +83,20 @@ LASTLY, the keyboard matrix. I am not going to talk about it because its quite l
 WAIT WAIT WAIT, I also saw (snooping) in the slack channel of forge someone talking about needing to put a cap and a resistor in parallel between the usb shield and the ground plane to reduce the risk of a mega shock killing the macropad (and maybe the user idk)... my case is made out of plastic, there's no exposed metal frame (like aluminum or something) to touch. I don't need that. If a mega shock somehow finds its way inside, its just going to pass through the ground planes straight to narnia anyway.
 
 **Total time spent: 3.5 hours**
+
+# May 24: Cleaned up the schematic
+
+agh my eyes!... Much better!
+
+I, as the title says, cleaned up the schematic by adding labels and putting stuff inside boxes (for some reason some people hate that!?). 
+
+I also added a LED to be controlled by the nRF to say "HEY, i am alive and working and on and not dead and sleeping and, again, dead" AND also another LED for the PMIC to say "i am charging this beautiful battery that can catch fire if i do it wrong". 
+
+oh right, I also added test points for the power stuff and some power flags to stop kicad from screaming those pesky 4 drc errors at me (first time getting that low amount in the schematic). Like I am not going to test points to random things that won't be useful for actually debugging the board dude.
+
+LOOK AT IT, yes you, ITS beautiful i guess:
+![cleaned up schematic](.github/images/7.png)
+
+omgggg, now i need to suffer searching for the components for each thingy I placed goddamit AAAAGH. well not everything like the actual chips i do have them figured out but the other stuff nope. pee pee poo poo dude. god its even sadder now knowing that lapse is probably going to be requirement or else big slap and big slash of hours for the road to 1.35€
+
+**Total time spent: .7 hours**

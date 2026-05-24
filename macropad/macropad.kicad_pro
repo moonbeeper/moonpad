@@ -28,7 +28,16 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|3606800|533400|7ebb2372-6c17-42cf-ae61-ee58946ce4ef|3f6261aa-0df5-4590-ab0a-54f208864961|/7e110e85-dd17-4b97-98d0-e686de5d9f1b|/7e110e85-dd17-4b97-98d0-e686de5d9f1b|/7e110e85-dd17-4b97-98d0-e686de5d9f1b",
+        "Unused PMIC buck out needs VSYS"
+      ],
+      [
+        "pin_to_pin|3606800|812800|e4916dce-b60b-4529-989b-016c8ccfd00c|e869bb71-63c9-446d-8ac2-e90514228ced|/7e110e85-dd17-4b97-98d0-e686de5d9f1b|/7e110e85-dd17-4b97-98d0-e686de5d9f1b|/7e110e85-dd17-4b97-98d0-e686de5d9f1b",
+        "Unused PMIC buck in/out goes to GND"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -404,6 +413,14 @@
     "meta": {
       "version": 1
     },
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -416,7 +433,7 @@
         "uuid": "7e110e85-dd17-4b97-98d0-e686de5d9f1b"
       }
     ],
-    "used_designators": "SW16,#PWR25,#PWR54-56,D14,C39",
+    "used_designators": "#PWR9-10,#PWR59,J1,#FLG1,#FLG4",
     "variants": []
   },
   "sheets": [
