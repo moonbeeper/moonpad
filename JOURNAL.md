@@ -100,3 +100,23 @@ LOOK AT IT, yes you, ITS beautiful i guess:
 omgggg, now i need to suffer searching for the components for each thingy I placed goddamit AAAAGH. well not everything like the actual chips i do have them figured out but the other stuff nope. pee pee poo poo dude. god its even sadder now knowing that lapse is probably going to be requirement or else big slap and big slash of hours for the road to 1.35€
 
 **Total time spent: .7 hours**
+
+# May 25: Added the LSCS ids to all components
+
+soo uhh. It might have gotten a bit carried away choosing each component for this thingy... i actually don't even know how i took almost 4 hours choosing componenets like wow. i still don't really like mr *lapse*, but it is pretty helpful to remember how the heck did you even waste so much time like me.
+
+Almost all componenets had their equivalent in kicad, but for some, like the SPDT switch, the sideways and normal tactile buttons, I had to get them from easyeda2kicad. 
+But I do be hating how kicad crashes hard when I uhh... instead of using the generated library from easyeda 2 kicad, i like to have my own footprint library (called meow :3). My process to move a footprint from the generated library is just grabbing and dropping the library on kicad (the footprint library viewer) and boom it loads the footprint. BUT CANNOT do that a second time because kicad straight crashes and then i just repeat the same stuff for like uhh 3 times lol, having those 3 times crashing lol.
+
+I also got the 3D models for the usbc, the rotary encoder and the buttons from the same place. I WONT TOLERATE the things being naked without a 3d model when i can easily get them.
+
+And then you have me uhh fighting for some time searching for a clock crystal because I messed up the hecking filters or even had even an error when choosing the crystal for the canbus controller (and also that i though that i had to get the same ppm number haha). OH and also you have me getting stuck searching inductors and stuff. 
+I used LCSC and when in doubt used Digikey because it seemed to give other answers sometimes. And from there I traced back to LCSC to retry searching what I wanted.
+
+In the end I do need to grab some things from Digikey, those things are the nRF and the pmic, because everything else is at LCSC... womp womp i have to pay upto idk moneys to ship it here :(. I mean, another way is to just get almost all my components from Digikey and boom freeshipping but idk man. I have to think about it because I WILL need to search again the components for EVERYTHING if I choose to swap to Digikey.
+
+btw, its pretty cool that kicad has a spreadsheet like feature to not be clicking on each component to add the lcsc id and the mpn. look at my beautiful partial screenshot where you can see the components with the stuff.
+
+![cool spreadsheet feature of the schematic stuff](.github/images/8.png)
+
+**Total time spent: 3.63 hours**
